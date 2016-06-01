@@ -1,0 +1,16 @@
+config : elasticsearch.yml
+cluster.name: elasticsearch_sudeep-dev
+node.name: "sudeep_01_dev"
+bootstrap.mlockall: true -----
+network.host: 127.0.0.1
+
+
+ curl -XGET localhost:9200/_cluster/health
+
+/plugin install license
+
+.\\elasticsearch.bat
+
+node recipe
+
+http://localhost:9200/_plugin/marvel/kibana/index.html#/dashboard/file/marvel.overview.json
